@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <el-container style="height: 652px; border: 1px solid #121313">
+        <el-aside style="width: 250px; height: 100%">
+          <!--引入自定义左侧菜单栏-->
+          <leftNav></leftNav>
+        </el-aside>
+        <el-main>
+          <!--引入跳转路由-->
+          <router-view></router-view>
+        </el-main>
+    </el-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LeftNav from '@/components/home/leftNav'
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    LeftNav
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
