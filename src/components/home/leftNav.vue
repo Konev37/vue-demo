@@ -8,11 +8,11 @@
             text-color="black"
             router
             style="height: 650px">
-          <!--    HelloWorld    -->
-          <el-menu-item index="/hello" style="text-align: left">
+          <!--    List    -->
+          <el-menu-item index="/list" style="text-align: left">
             <template slot="title">
               <i class="el-icon-menu"></i>
-              <span>HelloWorld</span>
+              <span>List</span>
             </template>
           </el-menu-item>
           <!--    Test    -->
@@ -30,6 +30,12 @@
               <span slot="title">test2</span>
             </el-menu-item>
           </el-submenu>
+          <el-menu-item index="/echarts" style="text-align: left">
+            <template slot="title">
+              <i class="el-icon-menu"></i>
+              <span>Echarts</span>
+            </template>
+          </el-menu-item>
         </el-menu>
       </el-col>
     </el-row>
